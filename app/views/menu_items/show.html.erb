@@ -1,0 +1,27 @@
+<h1><%= @menu_item.name %></h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @menu_item.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @menu_item.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  $<%= @menu_item.price_in_dollars %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @menu_item.category %>
+</p>
+
+<%= render 'comments/form', menu_item: @menu_item %>
+
+<% @menu_item.comments.each do |comment| %>
+  <%= comment.body %><br />
+<% end %>

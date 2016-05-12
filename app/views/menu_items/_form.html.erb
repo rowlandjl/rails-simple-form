@@ -1,0 +1,7 @@
+<%= simple_form_for(@menu_item) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :price_in_cents %>
+  <%= f.input :category, collection: ['', 'Seafood', 'Vegetarian', 'Pasta'] %>
+  <%= f.button :submit %>
+<% end %>

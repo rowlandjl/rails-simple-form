@@ -1,0 +1,5 @@
+---
+title: "Simple Form"
+type: "exercise"
+description: "Describes how to create forms with the simple_form gem."
+tags: "rails, views, rails-forms, capybara"

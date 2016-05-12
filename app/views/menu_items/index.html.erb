@@ -1,0 +1,6 @@
+<h1>HERE IS THE MENU ITEM INDEX PAGE</h1>
+
+<% @menu_items.each do |menu_item| %>
+  <h3><%= menu_item.name %></h3>
+  <%= link_to "Destroy #{menu_item.name}", menu_item_path(menu_item.id), method: :delete %>
+<% end %>
